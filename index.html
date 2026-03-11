@@ -11,6 +11,16 @@
     
     body{
         text-align: center;
+        color: white;
+    }
+
+    .content{
+        margin: auto;
+        background-color:rgb(88, 144, 255);
+        width: 500px;
+        height:400px;
+        padding: 50px;
+        box-shadow:0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     }
     
 
@@ -19,9 +29,14 @@
 
 <body>
 
-<h1>Electricity Consumption Classifier</h1>
+<br><br><br><br><br>
+<div class="content">
+<h2>Electricity Consumption Classifier</h2>
 <input type="text" id="Energy" class="form-control" placeholder="type here..."> <!--asks for user input-->
-<button class="btn btn-info" onclick="ClassifyEnergy()">Consumption Classification</button>  
+
+<br>
+<button class="btn btn-primary" onclick="ClassifyEnergy()">Consumption Classification</button>  
+<br><br>
 <p>Please input a non-negative integer for your energy consumption.</p>
     
     <script>
@@ -59,6 +74,7 @@
             }
 
     </script>
+</div>
 
 </body>
 </html>
